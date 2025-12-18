@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery | Creates by Icievyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="gallery-page">
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Creates by <span>Icievyy</span></a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="https://web.facebook.com/createsby.icievyy" target="_blank" class="btn-cta">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="gallery-header">
+        <div class="container">
+            <h1>Our <span>Collection</span></h1>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frames">Frames</button>
+                <button class="filter-btn" data-filter="digital">Digital Art</button>
+                <button class="filter-btn" data-filter="boxes">Gift Boxes</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="fixed-gallery-grid">
+            <div class="gallery-card frames">
+                <div class="img-box"><img src="/productimg/flower1.jpg"></div>
+                <div class="item-info"><h4>Custom craft</h4></div>
+            </div>
+            <div class="gallery-card digital">
+                <div class="img-box"><img src="/productimg/lace1.jpg"></div>
+                <div class="item-info"><h4>Custom craft</h4></div>
+            </div>
+            <div class="gallery-card boxes">
+                <div class="img-box"><img src="/productimg/fan1.jpg"></div>
+                <div class="item-info"><h4>Custom craft</h4></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
