@@ -33,34 +33,21 @@ document.querySelectorAll('.nav-links a').forEach(link => {
  */
 function printSingleProduct(button) {
     const productCard = button.closest('.product-card');
-    const printWindow = window.open('', '_blank', 'width=600,height=800');
     
-    // Gather all current stylesheets to maintain design in the print window
-    const styles = Array.from(document.querySelectorAll('link[rel="stylesheet"], style'))
-                        .map(s => s.outerHTML).join('');
+    // 1. Add a class to the body to tell CSS we are in 'Print Mode'
+    document.body.classList.add('print-mode-active');
+    
+    // 2. Mark this specific card as the one to show
+    productCard.classList.add('is-printing');
 
-    printWindow.document.write(`
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <title>Price Tag - Creates by Icievyy</title>
-                ${styles}
-                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-            </head>
-            <body class="print-mode">
-                <div class="product-card">
-                    ${productCard.innerHTML}
-                </div>
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        setTimeout(() => window.close(), 500);
-                    };
-                <\/script>
-            </body>
-        </html>
-    `);
-    printWindow.document.close();
+    // 3. Small delay to let the mobile browser render the layout change
+    setTimeout(() => {
+        window.print();
+        
+        // 4. Clean up after the print dialog closes
+        document.body.classList.remove('print-mode-active');
+        productCard.classList.remove('is-printing');
+    }, 200);
 }
 
 /**
