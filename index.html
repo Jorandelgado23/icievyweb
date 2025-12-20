@@ -3,84 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creates by Icievyy | Handcrafted Gifts</title>
+    <title>Creates by Icievyy | Personalized Handcrafted Gifts</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./productimg/tabicon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav id="navbar">
+    <nav>
         <div class="container nav-container">
-            <h1 class="logo">Creates by <span>Icievyy</span></h1>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-            <ul class="nav-links">
+            <a href="index.html" class="logo">Creates by <span>Icievyy</span></a>
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#about">Our Story</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html">Shop</a></li>
                 <li><a href="https://web.facebook.com/createsby.icievyy" target="_blank" class="btn-cta">Order Now</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu" style="cursor:pointer; display:none;">
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+            </div>
         </div>
     </nav>
 
     <header class="hero" style="background-image: url('./productimg/bg1.png');">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="pre-title">Handcrafted with Love</span>
-            <h2>Timeless Gifts for <br><span>Treasured Moments</span></h2>
-            <p>Personalized frames, digital portraits, and curated gift boxes.</p>
-            <div class="hero-btns">
-                <a href="gallery.html" class="btn-main">Explore Gallery</a>
-                <a href="#about" class="btn-outline">About Us</a>
-            </div>
+            <h2 style="font-weight:300;">Crafting Moments into <br><span>Treasured Memories</span></h2>
+            <p style="font-size: 1.1rem; margin-bottom:30px; opacity:0.9;">Handmade frames and digital art tailored just for you.</p>
+            <a href="gallery.html" class="btn-cta" style="padding: 15px 40px; font-size: 1rem;">View Collections</a>
         </div>
     </header>
 
     <section id="about" class="intro-section">
         <div class="container intro-grid">
             <div class="intro-image">
-                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=800" alt="About Us">
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=800" alt="Handmade process">
             </div>
             <div class="intro-text">
-                <span class="tag">About Us</span>
-                <h3>Small Hands, <span>Big Heart.</span></h3>
-                <p>What started as a passion for gifting has grown into <strong>Creates by Icievyy</strong>—a dedicated space for personalized art.</p>
-                <div class="stats">
-                    <div class="stat-item"><strong>100%</strong><span>Handmade</span></div>
-                    <div class="stat-item"><strong>PH Based</strong><span>Local Brand</span></div>
-                </div>
+                <h3 style="font-size: 2.5rem; margin-bottom:20px;">Made with <span>Love</span></h3>
+                <p>We believe every gift tells a story. At <strong>Creates by Icievyy</strong>, we transform your photos and flowers into timeless pieces of art that live on forever.</p>
             </div>
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h2 class="logo">Creates by <span>Icievyy</span></h2>
-                <p>Crafting personalized memories through digital art and handmade gifts.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="https://m.me/createsby.icievyy">Order Now</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <div class="social-icons">
-                    <a href="https://web.facebook.com/createsby.icievyy" target="_blank" class="social-link">Facebook</a>
-                    <a href="https://m.me/createsby.icievyy" target="_blank" class="social-link">Messenger</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Creates by Icievyy. All rights reserved.</p>
-        </div>
-    </footer>
+    <a href="https://m.me/createsby.icievyy" class="floating-order">Message to Order</a>
 
     <script src="script.js"></script>
 </body>

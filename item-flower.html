@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Frames Collection | Creates by Icievyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="gallery-page">
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Creates by <span>Icievyy</span></a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Shop</a></li>
+                <li><a href="https://web.facebook.com/createsby.icievyy" target="_blank" class="btn-cta">Order Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu" style="cursor:pointer; display:none;">
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+                <span class="bar" style="display:block; width:25px; height:3px; background:#333; margin:5px 0;"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="collection-header no-print" style="padding: 160px 0 60px; background: var(--primary-light); text-align: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: white; border-radius: 50%; opacity: 0.5; z-index: 1;"></div>
+        
+        <div class="container intro-text" style="position: relative; z-index: 2;"> 
+            <span class="category-label" style="letter-spacing: 4px; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; background: white; padding: 5px 15px; border-radius: 50px; box-shadow: var(--shadow-sm);">Featured Collection</span>
+            <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); margin-top: 20px; font-weight: 700;">Handcrafted <span>Frames</span></h1>
+            <div style="width: 50px; height: 3px; background: var(--primary); margin: 15px auto;"></div>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 10px auto; font-size: 1.1rem;">Preserved florals and captured memories, elegantly encased in premium glass.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="fixed-gallery-grid">
+            
+            <div class="product-card">
+                <div class="print-only receipt-branding">
+                    <h2 style="font-family: 'Dancing Script';">Creates by Icievyy</h2>
+                    <p class="dots">--------------------------</p>
+                </div>
+
+                <div class="img-box">
+                    <img src="./productimg/flower1.jpg" alt="Classic Pink Rose Frame">
+                    <span class="product-badge" style="position: absolute; top: 15px; right: 15px; background: white; padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; color: var(--primary); box-shadow: var(--shadow-sm); z-index: 5;">Best Seller</span>
+                </div>
+
+                <div class="product-details">
+                    <h4 class="item-name" style="font-size: 1.2rem; margin-bottom: 5px;">Classic Pink Rose Frame</h4>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 10px;">Dried Rose & Wood Frame</p>
+                    <p class="item-price">₱599.00</p>
+                    
+                    <div class="no-print" style="margin-top: 15px;">
+                        <button onclick="printSingleProduct(this)" class="btn-print-action">
+                             Print Price Tag
+                        </button>
+                    </div>
+                </div>
+
+                <div class="print-only receipt-footer">
+                    <p class="dots">--------------------------</p>
+                    <p>Handmade with Love in PH</p>
+                    <p>fb.com/createsby.icievyy</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="print-only receipt-branding">
+                    <h2 style="font-family: 'Dancing Script';">Creates by Icievyy</h2>
+                    <p class="dots">--------------------------</p>
+                </div>
+
+                <div class="img-box">
+                    <img src="./productimg/flower2.jpg" alt="Eternal White Lily">
+                </div>
+
+                <div class="product-details">
+                    <h4 class="item-name" style="font-size: 1.2rem; margin-bottom: 5px;">Eternal White Lily</h4>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 10px;">Preserved White Lily</p>
+                    <p class="item-price">₱650.00</p>
+                    
+                    <div class="no-print" style="margin-top: 15px;">
+                        <button onclick="printSingleProduct(this)" class="btn-print-action">Print Price Tag</button>
+                    </div>
+                </div>
+
+                <div class="print-only receipt-footer">
+                    <p class="dots">--------------------------</p>
+                    <p>Handmade with Love</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="print-only receipt-branding">
+                    <h2 style="font-family: 'Dancing Script';">Creates by Icievyy</h2>
+                    <p class="dots">--------------------------</p>
+                </div>
+
+                <div class="img-box">
+                    <img src="./productimg/flower3.jpg" alt="Sunshine Sunflower">
+                    <span class="product-badge" style="position: absolute; top: 15px; right: 15px; background: #FFF9C4; padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; color: #FBC02D; box-shadow: var(--shadow-sm); z-index: 5;">Brighten Up</span>
+                </div>
+
+                <div class="product-details">
+                    <h4 class="item-name" style="font-size: 1.2rem; margin-bottom: 5px;">Sunshine Sunflower</h4>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 10px;">Vibrant Yellow Petals</p>
+                    <p class="item-price">₱599.00</p>
+                    
+                    <div class="no-print" style="margin-top: 15px;">
+                        <button onclick="printSingleProduct(this)" class="btn-print-action">Print Price Tag</button>
+                    </div>
+                </div>
+
+                <div class="print-only receipt-footer">
+                    <p class="dots">--------------------------</p>
+                    <p>Handmade with Love</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back-nav no-print" style="text-align: center; margin: 40px 0 100px;">
+            <div style="background: var(--primary-light); padding: 40px; border-radius: 30px;">
+                <h3 style="margin-bottom: 10px;">Love these designs?</h3>
+                <p style="margin-bottom: 25px; color: #666;">Message us to customize your own frame with your preferred flowers.</p>
+                <a href="https://m.me/createsby.icievyy" target="_blank" class="btn-cta" style="display: inline-block;">Inquire on Messenger</a>
+                <div style="margin-top: 30px;">
+                    <a href="gallery.html" style="text-decoration: none; color: var(--primary); font-weight: 700; font-size: 0.9rem; border-bottom: 2px solid var(--primary);">← View All Collections</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://web.facebook.com/createsby.icievyy" class="floating-order no-print" style="display: flex; align-items: center; justify-content: center;">
+        Order Now
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
