@@ -112,43 +112,15 @@ nav {
 .no-print { display: block; }
 
 @media print {
-    /* 1. Hide EVERYTHING on the page */
-    body.print-mode-active * {
-        visibility: hidden;
-        box-shadow: none !important;
+    body.print-mode { background: white !important; }
+    body.print-mode .product-card { 
+        width: 320px !important; margin: 20px auto !important; 
+        border: 2px dashed #000 !important; box-shadow: none !important; 
+        border-radius: 0; padding: 20px;
     }
-
-    /* 2. Show only the specific card and its contents */
-    body.print-mode-active .is-printing,
-    body.print-mode-active .is-printing * {
-        visibility: visible;
-    }
-
-    /* 3. Force the card to the very top of the page */
-    body.print-mode-active .is-printing {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        max-width: 350px; /* Thermal printer size */
-        margin: 0;
-        padding: 20px;
-        border: 2px dashed #000 !important;
-        background: white !important;
-    }
-
-    /* 4. Formatting adjustments for the tag */
-    .print-only { display: block !important; text-align: center; }
-    .no-print, .btn-print-action, nav, .floating-order, .back-nav { 
-        display: none !important; 
-    }
-    
-    .receipt-branding h2 { 
-        font-family: 'Dancing Script', cursive; 
-        color: #000; 
-        margin-bottom: 5px; 
-        font-size: 1.8rem;
-    }
+    body.print-mode .no-print { display: none !important; }
+    body.print-mode .print-only { display: block !important; text-align: center; font-family: 'Courier New', monospace; }
+    .receipt-branding h2 { font-family: 'Dancing Script', cursive; color: #000; margin-bottom: 5px; }
     .dots { letter-spacing: 3px; margin: 10px 0; font-weight: bold; }
 }
 
